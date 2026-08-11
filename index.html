@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faham | digital solutions</title>
+    <link rel="stylesheet" href="index.html">
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+</head>
+
+<body>
+    <div class="system-hud">
+    <span class="hud-dot"></span> SYS_OK | <span id="fpsCounter">60</span> FPS
+</div>
+    
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-ring"></div>
+            <div class="loader-ring ring-2"></div>
+            <div class="loader-logo">
+                <img src="download.png" alt="Logo" onerror="this.src='https://via.placeholder.com/100/111827/60a5fa?text=FAHAM'">
+            </div>
+        </div>
+        <span class="loader-text">Loading Experience...</span>
+    </div>
+<canvas id="particles-canvas"></canvas>
+    <spline-viewer id="spline-bg" url="https://prod.spline.design/Y4wTp3Z13eoOgPS5/scene.splinecode"></spline-viewer>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                Faham digital <span>solutions</span>
+            </a>
+            <audio id="bgMusic" loop src=""></audio>
+
+<audio id="bg-audio" src="audi.wav" loop></audio>
+
+<div class="audio-equalizer" id="equalizer" title="Click to Play/Pause Sound">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+<div id="portal-wipe" class="portal-wipe"></div>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Welcome to my space</span>
+                    <h1>
+                        Hi, I'm <span class="gradient-text">Faham</span>
+                    </h1>
+                    <h2>
+                        <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+                    </h2>
+                    <p>
+                        I create modern, responsive and visually impressive digital experiences with clean design and smooth interactions.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/923111046773" target="_blank" class="btn whatsapp-btn magnetic-btn">
+                            <span class="pulse-dot"></span>
+                            Chat Me on WhatsApp
+                        </a>
+                        
+                        <a href="#projects" class="btn secondary-btn magnetic-btn">
+                            View Projects
+                        </a>
+                    </div>
+                    <div class="hero-magnetic-wrapper">
+    <button class="open-contact-btns open-modal-btn">
+        📧 E-mail
+    </button>
+</div>
+
+<div id="contactModal" class="contact-modal-overlay">
+    <div class="contact-modal-card">
+        
+        <button id="closeContactModal" class="close-modal-btn">&times;</button>
+        
+        <h2>Send Me a Message 💬</h2>
+        <p>Fill in the details below to reach out directly to my Gmail!</p>
+
+        <form action="https://formspree.io/f/xjybylve" method="POST" class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            
+            <div class="input-group">
+                <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+            </div>
+            
+            <button type="submit" class="send-msg-btn">Send Message 🚀</button>
+        </form>
+
+    </div>
+</div>
+                    
+                    
+                    
+                </div>
+
+                <div class="profile-container">
+                    <div class="profile-glow"></div>
+                    <div class="profile-card" onclick="openImage('image3.jpg')">
+                        <img src="image3.jpg" alt="Faham" onerror="this.src='https://via.placeholder.com/400x400/111827/60a5fa?text=FAHAM'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">
+                    About <span>Me</span>
+                </h2>
+                <div class="about-card shine-effect">
+                    <p>
+                        Hi, I’m Faham. I’m a creative person who enjoys working with graphic design, frontend web design, MS Office, and AI tools. I’m still learning and improving my skills, but I can use what I know to create designs, websites, documents, and other digital work. I also use AI to make my work faster and better and to help me deliver useful solutions for my clients.
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span>📍</span>
+                            <div>
+                                <small>Location</small>
+                                <strong>Karachi, Pakistan</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span>💻</span>
+                            <div>
+                                <small>Artificial Intelligence</small>
+                                <strong>Expert</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">
+                    My <span>Skills</span>
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-card shine-effect">
+                        <span>01</span>
+                        <h3>Web Designer</h3>
+                        <p>Clean and semantic web structure.</p>
+                    </div>
+                    <div class="skill-card shine-effect">
+                        <span>02</span>
+                        <h3>Graphic Designer</h3>
+                        <p>Creative graphics and visual design.</p>
+                    </div>
+                    <div class="skill-card shine-effect">
+                        <span>03</span>
+                        <h3>MS Office</h3>
+                        <p>Professional documents and presentations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">
+                    Featured <span>Projects</span>
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card shine-effect" onclick="openImage('1.png')">
+                        <div class="project-image">
+                            <img src="1.png" alt="Project 1" onerror="this.src='https://via.placeholder.com/800x500/111827/3b82f6?text=PROJECT+1'">
+                            <div class="project-overlay">
+                                <span>Click to Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span>Project 01</span>
+                            <h3></h3>
+                            <p>Need a professional logo, Banner, Post, Flyers and Thumbnails for your business?</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card shine-effect" onclick="openImage('2.png')">
+                        <div class="project-image">
+                            <img src="2.png" alt="Project 2" onerror="this.src='https://via.placeholder.com/800x500/111827/8b5cf6?text=PROJECT+2'">
+                            <div class="project-overlay">
+                                <span>Click to Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span>Project 02</span>
+                            <h3></h3>
+                            <p>Need a professional logo, Banner, Post, Flyers and Thumbnails for your business?</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card shine-effect" onclick="openImage('3.jpg')">
+                        <div class="project-image">
+                            <img src="3.jpg" alt="Project 3" onerror="this.src='https://via.placeholder.com/800x500/111827/ec4899?text=PROJECT+3'">
+                            <div class="project-overlay">
+                                <span>Click to Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span> Project 03</span>
+                            <h3></h3>
+                            <p>Need a professional logo, Banner, Post, Flyers and Thumbnails for your business?</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card shine-effect" onclick="openImage('4.jpg')">
+                        <div class="project-image">
+                            <img src="4.jpg" alt="Project 3" onerror="this.src='https://via.placeholder.com/800x500/111827/ec4899?text=PROJECT+3'">
+                            <div class="project-overlay">
+                                <span>Click to Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span> Project 04</span>
+                            <h3></h3>
+                            <p>Need a professional logo, Banner, Post, Flyers and Thumbnails for your business?</p>
+                        </div>
+                    </div>
+
+<div class="project-card shine-effect" onclick="openImage('LOGO.png')">
+                        <div class="project-image">
+                            <img src="LOGO.png" alt="Project 3" onerror="this.src='https://via.placeholder.com/800x500/111827/ec4899?text=PROJECT+3'">
+                            <div class="project-overlay">
+                                <span>Click to Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span> Project 05</span>
+                            <h3></h3>
+                            <p>Need a professional logo, Banner, Post, Flyers and Thumbnails for your business?</p>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card shine-effect" onclick="openImage('5.jpg')">
+                        <div class="project-image">
+                            <img src="5.jpg" alt="Project 4" onerror="this.src='https://via.placeholder.com/800x500/111827/f59e0b?text=PROJECT+4'">
+                            <div class="project-overlay">
+                                <span>Click to Preview</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span> Project 06</span>
+                            <h3></h3>
+                            <p>Need a professional logo, Banner, Post, Flyers and Thumbnails for your business?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+    <div class="container">
+        <div class="contact-card shine-effect">
+            <span class="hero-badge">Let's Work Together</span>
+            <h2>Have a project in mind?</h2>
+            <p>Let's discuss your idea and create something amazing together.</p>
+            <p>I can do the work for you at a reasonable price.</p>
+
+            <div class="contact-buttons-wrapper">
+                <a href="https://wa.me/923111046773" target="_blank" class="btn whatsapp-btn contact-btn magnetic-btn">
+                    💬 Contact Me on WhatsApp
+                </a>
+
+                <button class="btn secondary-btn magnetic-btn open-contact-btn">
+                    📧 E-mail
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="contactModal" class="contact-modal-overlay">
+    <div class="contact-modal-card">
+        <button id="closeContactModal" class="close-modal-btn">&times;</button>
+        
+        <h2>Send Me a Message 💬</h2>
+        <p>Fill in the details below to reach out directly to my Gmail!</p>
+
+        <form action="https://formspree.io/f/xjybylve" method="POST" class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            
+            <div class="input-group">
+                <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+            </div>
+            
+            <button type="submit" class="send-msg-btn">Send Message 🚀</button>
+        </form>
+    </div>
+</div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Faham. All Rights Reserved.</p>
+    </footer>
+
+    <div class="image-popup" id="imagePopup">
+        <button class="popup-close" onclick="closeImage()">×</button>
+        <div class="popup-image-container">
+            <img id="popupImage" src="" alt="Project Preview">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
